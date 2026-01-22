@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 __pycache__/
 *.pyc
 .env
@@ -9,3 +10,5 @@ venv/
 
 # Other unnecessary files
 *.zip
+=======
+>>>>>>> 3bd0225 (Clean repo: remove unnecessary files, set correct structure)
