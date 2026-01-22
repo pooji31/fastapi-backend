@@ -95,3 +95,15 @@ def generate_question(req: QuestionRequest):
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Server error: {e}")
+    from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"message": "Hello World"}
+
+@app.get("/hello")
+def hello():
+    return {"message": "Hello from FastAPI in coding_qs/main.py!"}
+
